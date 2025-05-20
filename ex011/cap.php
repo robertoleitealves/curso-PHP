@@ -16,9 +16,9 @@
         $conversao = floatval($valor / $valordolar);
         ?>
         <div>
-            <p><?php echo "Valor em real: $valor" ?></p>
-            <p><?php echo "Valor do dólar: $valordolar" ?></p>
-            <p><?php echo "Valor total da conversão para dólar: $conversao" ?></p>
+            <p><?php echo "Seus R$ $valor equivalem a <strong> US$ $conversao </strong>" ?></p>
+            <p><?php echo "<strong>Cotação fixa de: $valordolar </strong> informada direto no código" ?></p>
+            
         </div>
         <div>
             <button type="submit" onclick="javascript:history.go(-1)">Voltar</button>
