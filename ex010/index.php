@@ -38,7 +38,7 @@ if (isset($_GET['gerar'])) {
                     <p>O valor gerado com random_int foi: <?php echo $numero2; ?></p>
                     <p>O valor gerado com mt_rand foi: <?php echo $numero3; ?></p>
                     <!-- Botão para gerar outro número -->
-                    <input type="submit" name="gerar" value="Gerar Outro">
+                    <button type="submit" name="gerar" value="Gerar Outro">&#x1F504; Gerar Outro</button>
                 </div>
             <?php else: ?>
                 <div>
