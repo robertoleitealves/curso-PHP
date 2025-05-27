@@ -3,6 +3,8 @@
 $numero = null;
 if (isset($_GET['gerar'])) {
     $numero = rand(0, 100); // Função rand() para gerar um número aleatório entre 0 e 100
+    $numero2 = random_int(0,100); //Função random_int, utilizada para gerar numeros aleatórios criptografados
+    $numero3 = mt_rand(0,100); //Função mt_rand, função mais rápida para gerar
 }
 ?>
 
@@ -24,13 +26,17 @@ if (isset($_GET['gerar'])) {
         <form action="" method="get">
             <label for="number">Gerando um número aleatório de 0 à 100:</label>
             <div>
-            <br><br>
+            <br>
+            
+            <br>
 
             </div>
 
             <?php if ($numero !== null): ?>
                 <div>
                     <p>O valor gerado foi: <?php echo $numero; ?></p>
+                    <p>O valor gerado com random_int foi: <?php echo $numero2; ?></p>
+                    <p>O valor gerado com mt_rand foi: <?php echo $numero3; ?></p>
                     <!-- Botão para gerar outro número -->
                     <input type="submit" name="gerar" value="Gerar Outro">
                 </div>
