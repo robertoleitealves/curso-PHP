@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <h1>Resultado Final</h1>
+        <h1>Informe um número</h1>
         <?php $numero = $_GET["number"];
         $ant = $numero - 1;
         $suc = $numero + 1;
@@ -21,7 +21,7 @@
             <p><?php echo "O número sucessor é: $suc" ?></p>
         </div>
         <div>
-            <button type="submit" onclick="javascript:history.go(-1)">Voltar</button>
+            <button type="submit" onclick="javascript:history.go(-1)">&#x2B05; Voltar</button>
         </div>
     </main>
 </body>
